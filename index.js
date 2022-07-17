@@ -19,8 +19,6 @@ app.use(express.urlencoded ({extended:true}));
 app.use('/api/books', Booksroute)
 
 
-
-
 //  ----------------  Connection  ----------------------------
 
 mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true }).then(() => {
